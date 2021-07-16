@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Martaulina | Web tanaman hias</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<nav id="navbar">
+				<a class="logo">Tanem</a>
+                <a href="#order">Order</a>
+                <a href="#katalog">Katalog</a>
+                <a href="#about">About</a>
+                <a href="#">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+            </ul>
+		</nav>
+		<div class="jumbotron">
+			<h5>Menyediakan berbagai<br>jenis tanaman.</h5>
+			<p>Join with us</p>
+		</div>
+	</header>
+
+	<main>
+		<div id="content">
+			<article id="about">
+				<h6>About</h6>
+				<p class="icon">― Tanem ―</p>
+				<br>
+				<p>Tanem Merupakan sebuah usaha kecil di bidang penjualan tanaman hias.<br> Semua pengelolaannya bersumber dari kelompok penjual tanaman.<br> Berlokasi Di Jalan Benda, Padurenan Bekasi.</p>
+				<img src="img/about.png" alt="tanaman">
+			</article>
+
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ebf5f0" fill-opacity="1" d="M0,256L720,256L1440,64L1440,0L720,0L0,0Z"></path></svg>
+
+			<article id="katalog">
+				<h6>Katalog</h6>
+				<section id="tanaman">
+					<div id="tanaman1">
+						<img src="img/tanaman1.jpg" alt="Monstera">
+						<p>Janda Bolong</p>
+						<p class="harga"><span>Rp.105.000</span> Rp.55.000</p>
+					</div>
+
+					<div id="tanaman2">
+						<img src="img/tanaman2.jpg" alt="Kuping Gajah">
+						<p>Palm/Kuping Gajah</p>
+						<p class="harga"><span>Rp.100.000</span> Rp.50.000</p>
+					</div>
+
+					<div id="tanaman3">
+						<img src="img/tanaman3.png" alt="Lidah Buaya">
+						<p>Lidah Buaya</p>
+						<p class="harga"><span>Rp.50.000</span> Rp.15.000</p>
+					</div>
+				</section>
+			</article>
+
+			<article id="order">
+					<h6>Order</h6>
+					<form action="#">
+						<table>
+						<tr>
+							<th width=30>No.</th>
+							<th width=280>Tanaman</th>
+							<th width=120>Harga</th>
+							<th width=200>Jumlah Pesan</th>
+						</tr>
+
+						<tr>
+							<td> 1.</td>
+							<td>Janda Bolong</td>
+							<td>@   Rp. <input type="text" name="harga1" value="55000" size=5 readonly></td>
+							<td><center><input type="text" name="jumlah1" onchange="proses()" size=12 style="text-align:center"></center></td>
+						</tr>
+
+						<tr>
+							<td> 2.</td>
+							<td>Kuping Gajah</td>
+							<td>@   Rp. <input type="text" name="harga2" value="50000" size=5 readonly></td>
+							<td><center><input type="text" name="jumlah2" onchange="proses()" size=12 style="text-align:center"></center></td>
+						</tr>
+
+						<tr>
+							<td> 3.</td>
+							<td>Lidah Buaya</td>
+							<td>@   Rp. <input type="text" name="harga3" value="15000" size=5 readonly></td>
+							<td><center><input type="text" name="jumlah3" onchange="proses()" size=12 style="text-align:center"></center></td>
+						</tr>
+
+						<tr>
+							<td colspan=3 align="right">JUMLAH TOTAL</td>
+							<td><center>Rp. <input type="text" name="total" size=8 style="text-align:center" readonly></center></td>
+							</td>
+							</table>
+							<br />
+						</tr>
+						<center><input type="button" value="BATAL" onclick="batal()" /></center>
+					</form>
+			</article>
+
+			<article id="contact">
+				<h6>Contact</h6>
+				<form>
+					<label for="fname">Nama</label>
+				    <input type="text" id="fname"placeholder="Your name..">
+
+				    <label for="lname">Email</label>
+				    <input type="text" id="email"placeholder="Your email..">
+
+				    <label for="subject">Subject</label>
+				    <textarea id="subject"placeholder="Write something.."></textarea>
+
+				    <input type="submit" value="Submit">
+				</form>
+			</article>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ebf5f0" fill-opacity="1" d="M0,160L720,32L1440,0L1440,0L720,0L0,0Z"></path></svg>
+
+			<aside>
+				<section id="owner">
+					<h6>Owner</h6>
+					<img src="img/marta.jpg">
+					<h2>― Martaulina ―</h2>
+					<p>Hallo Saya Martaulina, Lahir di Jakarta 20 Maret 2001 dan <br>Sekarang bertempat tinggal di Padurenan Kota Bekasi.<br>saat ini sebagai beban keluarga dan saya sangat tertarik dalam <br>bidang tanaman hias. Kedepannya saya nga tau mau ngapain.</p>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<footer>
+        <p class="icon">― Tanem ―</p> 
+        Martaulina &copy; 2021, Bekasi
+    </footer>
+<script src="js.js"></script>
+<script src="order.js"></script>
+</body>
+</html>
